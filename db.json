@@ -1,6 +1,6 @@
 {
     "bg": "/bg2.png",
-    "title": "Quiz CSS da Alura",
+    "title": "Quiz REACT",
     "description": "Teste os seus conhecimentos a ponto de dominar seu oodoma React e se tornar um Hogake da programação!",
     "questions": [
       {
@@ -18,7 +18,7 @@
       {
         "image": "https://pa1.narvii.com/6466/a9fce99756120573c027ef59120142addc1fa48f_00.gif",
         "title": "Qual a diferença entre props e state?",
-        "description": "Faz diferença...",
+        "description": "Existe uma grande diferença entre saber e ter certeza absoluta - Maito Gai",
         "answer": 0,
         "alternatives": [
            "Props é repassado ao componente (valores herdados), State é gerenciado pelo próprio componente (valores internos do componente)",
@@ -40,7 +40,7 @@
       {
         "image": "https://i.pinimg.com/originals/ba/9f/52/ba9f522bb5a71d70e5518f3e716d1ce0.gif",
         "title": "O que é state no React?",
-        "description": "Vamos lá Chunin",
+        "description": "Não importa em que posição esteja, sempre há uma forma de virar o jogo - Shikamaru Nara",
         "answer": 1,
         "alternatives": [
            "State de um componente é uma array que contém algumas informações que não podem alterar durante o ciclo de vida do componente.",
@@ -60,63 +60,61 @@
         ]
       },
       {
-        "image": "",
-        "title": "?",
-        "description": "Faz...",
-        "answer": 0,
+        "image": "https://thumbs.gfycat.com/GrandioseMenacingGermanspaniel-size_restricted.gif",
+        "title": "Quando o Facebook distribuiu o primeiro release do React para o mundo, ele também introduziu um novo dialeto do JavaScript chamado JSX. Defina JSX:",
+        "description": "Você permite a utilização de uma síntese similar ao html no momento da criação de elementos para o React?",
+        "answer": 3,
         "alternatives": [
-           "",
-           "",
-           "",
-           ""
+           "JavaScriptXJASON",
+           "JASONXML",
+           "JutsuSombrasXinobi",
+           "JavaScriptXML"
         ]
       },
       {
-        "image": "",
-        "title": "?",
-        "description": "Faz...",
+        "image": "https://steamuserimages-a.akamaihd.net/ugc/622969238672144589/FA47F5A5913DBA9DFFFA843E83EA00BCBD811D89/",
+        "title": "Quais os primeiros passos para usar o React?",
+        "description": "Tem que saber por onde começar...",
         "answer": 0,
         "alternatives": [
-           "",
-           "",
-           "",
-           ""
+           "Instalar o Node.js / utilizar o comando: npx create-react-app my app / npm start ",
+           "Instalar o Next.js / utilizar o comando: npx create-react-app my app / npm build",
+           "Instalar o jutsu invocação das sombras / utilizar NShp UNS4-react-app / npm storm",
+           "Instalar o Node.js / utilizar o comando: npm create-react-app my app / npx start "
         ]
       },
       {
-        "image": "",
-        "title": "?",
-        "description": "Faz...",
-        "answer": 0,
+        "image": "https://i.pinimg.com/originals/2e/aa/52/2eaa52657aef3cacf661e2c8d6c2671c.gif",
+        "title": "O que é virtual DOM?",
+        "description": "A dedicação nunca te deixa na mão - Maito Gai.",
+        "answer": 1,
         "alternatives": [
-           "",
-           "",
-           "",
-           ""
+          "É o DOM que algumas pessoas tem para trabalhos virtuais XD",
+          "É uma representação do DOM direto na memória. É o passo entre a função de render e a apresentação dos elementos na tela.",
+          "É uma representação HTML leve do DOM usado em estruturas declarativas da Web",
+          "É uma biblioteca JavaScript de código aberto para gerenciar o estado do aplicativo"
         ]
       },
       {
         "image": "https://i.pinimg.com/originals/e8/2d/b0/e82db006bca45a853cedb5da054c5477.gif",
-        "title": "?",
-        "description": "Faz...",
-        "answer": 0,
+        "title": "E possível ter SSR ( Server Side Rendering) com React?",
+        "description": "Tens um QI de 200?",
+        "answer": 3,
         "alternatives": [
-           "",
-           "",
-           "",
-           ""
+          "Não, o uso de um framework ou ferramenta não é suficiente para fazer possível.",
+          "Sim, mas é necessário usar a versão mais atualizada do Node.js",
+          "Sim, é só reunir o clã Nara para obter a resposta",
+          "Sim, mas é necessário usar um framework ou ferramenta para poder fazer possível, como por exemplo o Next.js ou Gatsby"
         ]
       },
       {
         "image": "https://giffiles.alphacoders.com/209/209687.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "title": "Por que não devemos atualizar o state diretamente?",
+        "description": "Esta pronto para ser um Hokage REACT?",
+        "answer": 1,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Se tentarmos atualizar o state diretamente ele irá chamar o método render do componente, assim não teremos uma view atualizada. Ao invés, devemos usar o método useState(). Ele agenda uma atualização do objeto state do componente. Quando o state alterar, o componente irá renderizar novamente. O único lugar onde podemos atribuir diretamente o state é no construtor.",
+          "Se tentarmos atualizar o state diretamente ele não irá chamar o método render do componente, assim não teremos uma view atualizada. Ao invés, devemos usar o método setState(). Ele agenda uma atualização do objeto state do componente. Quando o state alterar, o componente irá renderizar novamente. O único lugar onde podemos atribuir diretamente o state é no construtor."
         ]
       }
     ],

@@ -81,9 +81,9 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-            <h1>Next.js</h1>
+            <h1>React</h1>
           
-            <p>Teste seus conhecimentos sobre o que aprendemos na imersão-react!</p>
+            <p>Teste os seus conhecimentos a ponto de dominar seu oodoma React e se tornar um Hogake da programação!</p>
           </Widget.Content>          
         </Widget>
         <Footer />
