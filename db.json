@@ -1,10 +1,114 @@
 {
-    "bg": "/bg.jpg",
+    "bg": "/bg2.png",
     "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "description": "Teste os seus conhecimentos a ponto de dominar seu oodoma React e se tornar um Hogake da programação!",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+        "image": "https://pa1.narvii.com/6591/9a4dcbc9fde914035fde6080cdd3afe9a527afb2_hq.gif",
+        "title": "O que é o React?",
+        "description": "Essa é pra aquecer",
+        "answer": 2,
+        "alternatives": [
+          "É uma biblioteca JavaScript shared-source criada pela Microsoft",
+          "É um framework JavaScript open-source criada pelo Facebook",
+          "É uma biblioteca JavaScript open-source criada pelo Facebook",
+          "É um framework JutScript hidden-source criada pelo Leafbook Village"
+        ]
+      },
+      {
+        "image": "https://pa1.narvii.com/6466/a9fce99756120573c027ef59120142addc1fa48f_00.gif",
+        "title": "Qual a diferença entre props e state?",
+        "description": "Faz diferença...",
+        "answer": 0,
+        "alternatives": [
+           "Props é repassado ao componente (valores herdados), State é gerenciado pelo próprio componente (valores internos do componente)",
+           "Props é o elemento herdado pela família, State é desenvolvido pelo própio chakra",
+           "State é repassado ao componente (valores herdados), Props é gerenciado pelo próprio componente (valores internos do componente)"
+        ]
+      },
+      {
+        "image": "https://thumbs.gfycat.com/ThickNeedyAvians-size_restricted.gif",
+        "title": "O class components 'morreram' no React?",
+        "description": "Sadness and Sorrow",
+        "answer": 2,
+        "alternatives": [
+          "Sim, porque os Hooks substituem todas as usabilidades das class components",
+          "Existem muitas teórias que Jiraya está vivo mais o 3 Hokage realmente morreu",
+          "Até o momento só suposição, não há planos para remover classes do React"
+        ]
+      },
+      {
+        "image": "https://i.pinimg.com/originals/ba/9f/52/ba9f522bb5a71d70e5518f3e716d1ce0.gif",
+        "title": "O que é state no React?",
+        "description": "Vamos lá Chunin",
+        "answer": 1,
+        "alternatives": [
+           "State de um componente é uma array que contém algumas informações que não podem alterar durante o ciclo de vida do componente.",
+           "State de um componente é um objeto que contém algumas informações que podem alterar durante o ciclo de vida do componente.",
+           "State de um componente é um objeto que contém algumas informações que podem alterar durante o ciclo de vida do componente."
+        ]
+      },
+      {
+        "image": "https://yukigakure-habb.weebly.com/uploads/2/6/1/3/26138422/3678838_orig.gif",
+        "title": "Quais os principais recursos do React?",
+        "description": "Marque somente todas corretas",
+        "answer": 1,
+        "alternatives": [
+           "O uso do Real DOM / Não suporta renderização pelo servidor / Fluxo de dados unidirecional / Utiliza componentes de UI reutilizáveis para desenvolver a view",
+           "O uso do Virtual DOM / Suporta renderização pelo servidor / Fluxo de dados unidirecional / Utiliza componentes de UI reutilizáveis para desenvolver a view",
+           "O uso do Virtual DOM / Suporta renderização pelo servidor / Fluxo de chakra unidirecional / Utiliza componentes de WII U reutilizáveis para desenvolver a view"
+        ]
+      },
+      {
+        "image": "",
+        "title": "?",
+        "description": "Faz...",
+        "answer": 0,
+        "alternatives": [
+           "",
+           "",
+           "",
+           ""
+        ]
+      },
+      {
+        "image": "",
+        "title": "?",
+        "description": "Faz...",
+        "answer": 0,
+        "alternatives": [
+           "",
+           "",
+           "",
+           ""
+        ]
+      },
+      {
+        "image": "",
+        "title": "?",
+        "description": "Faz...",
+        "answer": 0,
+        "alternatives": [
+           "",
+           "",
+           "",
+           ""
+        ]
+      },
+      {
+        "image": "https://i.pinimg.com/originals/e8/2d/b0/e82db006bca45a853cedb5da054c5477.gif",
+        "title": "?",
+        "description": "Faz...",
+        "answer": 0,
+        "alternatives": [
+           "",
+           "",
+           "",
+           ""
+        ]
+      },
+      {
+        "image": "https://giffiles.alphacoders.com/209/209687.gif",
         "title": "Como fazer um seletor por id via CSS?",
         "description": "Essa é pra aquecer",
         "answer": 2,
@@ -13,16 +117,6 @@
           "*elemento",
           "#elemento",
           "%elemento"
-        ]
-      },
-      {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
-        "answer": 0,
-        "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
         ]
       }
     ],
