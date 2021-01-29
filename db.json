@@ -1,6 +1,6 @@
 {
     "bg": "/bg2.png",
-    "title": "Quiz REACT",
+    "title": "HOKAGE REACT",
     "description": "Teste os seus conhecimentos a ponto de dominar seu oodoma React e se tornar um Hogake da programação!",
     "questions": [
       {
@@ -45,7 +45,7 @@
         "alternatives": [
            "State de um componente é uma array que contém algumas informações que não podem alterar durante o ciclo de vida do componente.",
            "State de um componente é um objeto que contém algumas informações que podem alterar durante o ciclo de vida do componente.",
-           "State de um componente é um objeto que contém algumas informações que podem alterar durante o ciclo de vida do componente."
+           "State de um componente é um objeto que contém algumas informações que não podem alterar durante o ciclo de vida do componente."
         ]
       },
       {
