@@ -1,6 +1,6 @@
 {
     "bg": "/bg2.png",
-    "title": "HOKAGE REACT",
+    "title": " HOKAGE REACT",
     "description": "Teste os seus conhecimentos a ponto de dominar seu oodoma React e se tornar um Hogake da programação!",
     "questions": [
       {
@@ -119,7 +119,8 @@
       }
     ],
     "external": [
-      ""
+      "https://aluraquiz.brunomspais.vercel.app/",
+      "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
     ],
     "theme": {
       "colors": {

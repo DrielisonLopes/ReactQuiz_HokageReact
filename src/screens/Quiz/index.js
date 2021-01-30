@@ -1,117 +1,53 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import AlternativesForm from '../src/components/AlternativesForm';
-import Button from '../src/components/Button';
+import { Lottie } from '@crello/react-lottie';
+// import db from '../../../db.json';
+import Widget from '../../components/Widget';
+import QuizLogo from '../../components/QuizLogo';
+import QuizBackground from '../../components/QuizBackground';
+import QuizContainer from '../../components/QuizContainer';
+import AlternativesForm from '../../components/AlternativesForm';
+import Button from '../../components/Button';
+import BackLinkArrow from '../../components/BackLinkArrow';
+
+import loadingAnimation from './animations/loading.json';
 
 function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
-        Resultado do seu exame:
+        Tela de Resultado:
       </Widget.Header>
 
       <Widget.Content>
-      {/* [Desafio da Tela de Resultado] */}
-      {results.filter(x => x).length <= 5 &&
-        <figure><img
-        alt="bad-game"
-        style={{
-          width: '100%',
-          height: '150px',
-          objectFit: 'cover',
-        }}
-        src='https://media.tenor.com/images/486d805076db64d15bb36f2ae93f262b/tenor.gif'
-        /><figcaption>Mas um pouco e se tornará um Chunin developer!</figcaption>
-        </figure>
-      }
-      {results.filter(x => x).length == 6 && 
-        <figure><img
-        alt="middle-game"
-        style={{
-          width: '100%',
-          height: '150px',
-          objectFit: 'cover',
-        }}
-        src='https://pa1.narvii.com/6660/b1fbb30dc7d00bec9dc41d938e7a587f938c95f2_00.gif'
-        /><figcaption>Não desista Jounin, você é quase um ANBU developer!</figcaption>
-        </figure>
-      }
-      {results.filter(x => x).length == 7 && 
-        <figure><img
-        alt="middle-game"
-        style={{
-          width: '100%',
-          height: '150px',
-          objectFit: 'cover',
-        }}
-        src='https://pa1.narvii.com/6660/b1fbb30dc7d00bec9dc41d938e7a587f938c95f2_00.gif'
-        /><figcaption>Não desista Jounin, você é quase um ANBU developer!</figcaption>
-        </figure>
-      }
-      {results.filter(x => x).length == 8 && 
-        <figure><img
-        alt="good-game"
-        style={{
-          width: '100%',
-          height: '150px',
-          objectFit: 'cover',
-        }}
-        src='https://i.pinimg.com/originals/74/5c/3c/745c3ca489bc21318fdccf14b56d7a27.gif'
-        /><figcaption>Nossa! Você é um lendário Sannin React?</figcaption>
-        </figure>
-      }
-      {results.filter(x => x).length == 9 && 
-        <figure><img
-        alt="good-game"
-        style={{
-          width: '100%',
-          height: '150px',
-          objectFit: 'cover',
-        }}
-        src='https://i.pinimg.com/originals/74/5c/3c/745c3ca489bc21318fdccf14b56d7a27.gif'
-        /><figcaption>Nossa! Você é um lendário Sannin React?</figcaption>
-        </figure>
-      }
-      {results.filter(x => x).length > 9 && 
-        <figure><img
-        alt="hokage-game"
-        style={{
-          width: '100%',
-          height: '150px',
-          objectFit: 'cover',
-        }}
-        src='https://thumbs.gfycat.com/BlaringSparseImperialeagle-small.gif'
-        /><figcaption>Parabéns! Você é o novo Hokage React!</figcaption>
-        </figure>
-      }
-      <p>
-        Você acertou {results.filter(x => x).length} perguntas...
-      </p>
-      <p>
-        No total de
-        {' '}
-        {results.reduce((actualSum, actualResult) => {
-          const isCorrect = actualResult === true;
-          if(isCorrect) {
-            return actualSum + 50;
-          }
-          return actualSum;
-        }, 0)}
-        {' '}
-        pontos.
-      </p>
-      {/* <ul>
-        {results.map((result, i) => (
-          <li key={i}>
-            #0{i + 1} Resultado: {result === true ? 'Acertou' : 'Errou'}
-          </li>
-        ))}
-      </ul> */}
-    </Widget.Content>
+        <p>
+          Você acertou
+          {' '}
+          {/* {results.reduce((somatoriaAtual, resultAtual) => {
+            const isAcerto = resultAtual === true;
+            if (isAcerto) {
+              return somatoriaAtual + 1;
+            }
+            return somatoriaAtual;
+          }, 0)} */}
+          {results.filter((x) => x).length}
+          {' '}
+          perguntas
+        </p>
+        <ul>
+          {results.map((result, index) => (
+            <li key={`result__${result}`}>
+              #
+              {index + 1}
+              {' '}
+              Resultado:
+              {result === true
+                ? 'Acertou'
+                : 'Errou'}
+            </li>
+          ))}
+        </ul>
+      </Widget.Content>
     </Widget>
   );
 }
@@ -123,8 +59,13 @@ function LoadingWidget() {
         Carregando...
       </Widget.Header>
 
-      <Widget.Content>
-        [Desafio do Loading]
+      <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
+        <Lottie
+          width="200px"
+          height="200px"
+          className="lottie-container basic"
+          config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
+        />
       </Widget.Content>
     </Widget>
   );
@@ -146,7 +87,7 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
-        {/* <BackLinkArrow href="/" /> */}
+        <BackLinkArrow href="/" />
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>
@@ -211,8 +152,8 @@ function QuestionWidget({
           <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Button>
-          {isQuestionSubmited && isCorrect && <p>Muito bem...</p>}
-          {isQuestionSubmited && !isCorrect && <p>Não pode ser...</p>}
+          {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
+          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
@@ -224,13 +165,14 @@ const screenStates = {
   LOADING: 'LOADING',
   RESULT: 'RESULT',
 };
-export default function QuizPage() {
+export default function QuizPage({ externalQuestions, externalBg }) {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults] = React.useState([]);
-  const totalQuestions = db.questions.length;
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
   const questionIndex = currentQuestion;
-  const question = db.questions[questionIndex];
+  const question = externalQuestions[questionIndex];
+  const totalQuestions = externalQuestions.length;
+  const bg = externalBg;
 
   function addResult(result) {
     // results.push(result);
@@ -248,7 +190,7 @@ export default function QuizPage() {
     // fetch() ...
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1 * 1000);
+    }, 1 * 2000);
   // nasce === didMount
   }, []);
 
@@ -262,7 +204,7 @@ export default function QuizPage() {
   }
 
   return (
-    <QuizBackground backgroundImage={db.bg}>
+    <QuizBackground backgroundImage={bg}>
       <QuizContainer>
         <QuizLogo />
         {screenState === screenStates.QUIZ && (
